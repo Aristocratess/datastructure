@@ -22,5 +22,6 @@ ElemType Max(int num,...)//函数功能：返回num个数中的最大值
 int main()
 {
 	printf("1.最大值为%d\n",Max(4,7,9,5,8));//在4个数中求最大值，ap最初指向7
-	printf("2.最大值为%d\n",Max(3,17,36,25)); 
+	printf("2.最大值为%d\n",Max(3,17,36,25));
+	 
 }
