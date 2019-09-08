@@ -18,7 +18,7 @@ void DestroyBiTree(BiTree &T)
 void PreOrderTraverse(BiTree T,void(*Visit)(TElemType))
 {//初始条件：二叉树T存在，Visit是对结点操作的应用函数。
 //操作结果：先序递归遍历T，对每个结点调用函数Visit一次且仅一次
-　 if(T)
+if(T)
   {
   	Visit(T->data);
   	PreOrderTraverse(T->lchild,Visit);
