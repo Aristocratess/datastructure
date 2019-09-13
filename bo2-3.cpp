@@ -127,12 +127,12 @@ Status ListDelete(LinkList &L,int i,ElemType &e)
    return OK;
 }
 
-void ListTraverse(LinkList L,void(*vii)(ELemType))
+void ListTraverse(LinkList L,void(*vi)(ElemType))
 {//初始条件：线性表L已存在。操作结果：依次对L的每个数据元素调用函数vi（）
    LinkList p=L;
    while(p)
    {
-   	vii(p->data);
+   	vi(p->data);
    	p=p->next;
    }
 	printf("\n");
