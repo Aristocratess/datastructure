@@ -20,17 +20,13 @@ void CreateGraph(ALGraph &G)
   scanf("%d",&G.kind);
   if(G.kind<2)
     strcpy(s,"弧");
+  printf("请输入图的顶点数，边数:");
+  scanf("%d,%d",&G.vexnum,&G.vexnum);
   printf("请输入%d个顶点的值(名称<%d个字符):\n",G.vexnum,MAX_NAME);
   for(i=0;i<G.vexnum;++i)
   {
   	Input(G.vertices[i].data);
   	G.vertices[i].firstarc=NULL;//初始化与该顶点有关的出弧链表 
-   } 
-  printf("请输入%d个顶点的值(名称<%d个字符):\n",G.vexnum,MAX_NAME);
-  for(i=0;i<G.vexnum;++i)
-  {
-  	Input(G.vertices[i].data);
-	  G.vertices[i].firstarc=NULL; 
    } 
    printf("请输入%d条%s的",G.arcnum,s);
    switch(G.kind)
